@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+    section#content
+        table
+            thead
+                tr
+                    th First Name
+                    th Last Name
+            tbody
+                each name in names
+                    tr
+                        td= name.fname
+                        td= name.lname
